@@ -1,12 +1,44 @@
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
-  --color-headings: #1b0760;
-  --color-body: #918ca4;
-  --color-body-darker: #5c5577;
-  --color-border: #ccc;
+  --color-primary: #FF6B00; /* Orange */
+  --color-secondary: #808080; /* Gray */
+  --color-accent: #2F4F4F; /* Evergreen */
+  --color-headings:  #1e1e1e; ; /* Gray */
+  --color-body: #00CED1; /* Aqua */
+  --color-body-darker: #008B8B; /* Darker Aqua */
+  --color-border: #2F4F4F; /* Evergreen */
   --border-radius: 30px;
+}
+
+.btn--primary:hover {
+  background: #FF8533; /* Lighter orange */
+}
+
+.btn--secondary:hover {
+  background: #999999; /* Lighter gray */
+}
+
+.btn--accent:hover {
+  background: #3D6666; /* Lighter evergreen */
+}
+
+.card--primary .badge--primary {
+  background: #FF8533; /* Lighter orange */
+}
+
+.card--secondary .badge--secondary {
+  background: #999999; /* Lighter gray */
+}
+
+.icon-container {
+  background: #E0FFFF; /* Light cyan background */
+}
+
+.nav {
+  background: #2F4F4F; /* Evergreen */
+}
+
+.footer {
+  background: #1A2C2C; /* Darker evergreen */
 }
 
 *,
@@ -231,7 +263,35 @@ a {
 }
 
 .btn--primary:hover {
-  background: #3a8ffd;
+  background: #FF8533; /* Lighter orange */
+}
+
+.btn--secondary:hover {
+  background: #555555; /* Lighter deep gray */
+}
+
+.btn--accent:hover {
+  background: #4C67FF; /* Lighter royal blue */
+}
+
+.card--primary .badge--primary {
+  background: #FF8533; /* Lighter orange */
+}
+
+.card--secondary .badge--secondary {
+  background: #555555; /* Lighter deep gray */
+}
+
+.icon-container {
+  background: #F8F8F8; /* Off-white background */
+}
+
+.nav {
+  background: #444444; /* Deep Gray */
+}
+
+.footer {
+  background: #333333; /* Darker Gray */
 }
 
 .btn--secondary {
@@ -655,7 +715,7 @@ a {
 
 /* Navigation Bar */
 .nav {
-  background: #000;
+  background:white;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -700,7 +760,31 @@ a {
 
 .nav__brand {
   transform: translateY(5px);
-  width: 150px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.nav__brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__brand {
+    width: 80px;
+    height: 80px;
+  }
+}
+margin-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
